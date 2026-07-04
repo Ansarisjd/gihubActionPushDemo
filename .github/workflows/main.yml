@@ -1,24 +1,78 @@
+Praveen Kumar Chitirala _15563
+06:50 PM
+PK
+automated
+
+Bindu Priya_14344
+06:50 PM
+BP
+automate
+
+Anushree_Dubey Dubey_14331 joined as a guest
+Praveen Kumar Chitirala _15563
+06:50 PM
+PK
+as workflow not mentioned
+
+Ajay Malik Malik_15127
+06:50 PM
+AM
+automated
+
+Nikhil Nikhil_15967 left
+Nikhil Nikhil_15967 joined as a guest
+Bindu Priya_14344
+06:50 PM
+BP
+whever we push code/changes.
+
+Nikhil Nikhil_15967 left
+Anushree_Dubey Dubey_14331 joined as a guest
+SUKANT
+06:53 PM
+S
 name: Push Trigger Demo
 
+ 
+
 on:
- push:
-  branches:
-    - main
+
+  push:
+
+    branches:
+
+      -  main
+
+ 
 
 jobs:
- demo-job:
-  runs-on: ubuntu-latest
 
-  steps:
-   - name: Checkout Repository
-     uses: actions/checkout@v4
+  demo-job:
 
-   - name: show message
-     run: echo "Workflow started"
+    runs-on: ubuntu-latest
 
-   - name: List Files
-     run: ls -ltr
+ 
 
-    - name: Read app.txt
-      run: cat app.txt
+    steps:
 
+      - name: Checkout Repository
+
+        uses: actions/checkout@v4
+
+ 
+
+      - name: show message
+
+        run: echo "Workflow started"
+
+ 
+
+      - name: List Files
+
+        run: ls -ltr
+
+ 
+
+      - name: Read app.txt
+
+        run: cat app.txt
